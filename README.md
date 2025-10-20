@@ -1,8 +1,40 @@
-# React + Vite
+# CMAP Official Website - Project Summary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a modern music artist website for CMAP built with Next.js, featuring an integrated music player, video gallery, and booking system. The site showcases CMAP's music catalog with streaming capabilities and provides fans with comprehensive content access.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+### Core Framework
+
+- **Next.js 15.1.x** - React framework with SSR and routing
+- **React 19.0.0** - Modern React with latest features and hooks
+- **SASS** - Enhanced CSS preprocessing
+
+### Specialized Libraries
+
+- **Font Awesome** - Icon library for UI elements
+- **YouTube Embed** - Video content integration
+
+## Architecture Strategy
+
+### Component-Based Organization
+
+- **Modular components** in `app/components` with dedicated CSS files in `styles`
+- **Client-side interactivity** using 'use client' directive for dynamic components
+
+### Asset Management
+
+- Structured media organization: images in `public/Pics`, music in `public/Music`
+- Optimized Next.js Image components for performance
+- Direct YouTube integration for video content
+
+### Key Features
+
+- **Video Gallery** - YouTube embed integration with responsive design
+- **Social Integration** - Direct links to streaming platforms and social media
+
+The project follows modern React patterns with component isolation, CSS-in-modules approach, and responsive design principles, creating a professional artist portfolio with interactive media capabilities.
+
+More features to come!
