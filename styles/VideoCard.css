@@ -1,0 +1,32 @@
+.vid-card-container {
+    width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .vid-display {
+        background-color: grey;
+        height: 25em;
+    }
+    .vid-text {
+        padding: 1em 5em;
+    }
+
+    .vid-card-vid {
+        width: 40%;
+        height: 70%;
+        border-radius: 1em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: inherit;
+    }
+
+    .vid-text {
+        width: 40%;
+        }
+}

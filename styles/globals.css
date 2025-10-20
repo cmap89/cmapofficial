@@ -1,0 +1,27 @@
+/* @import url('./MusicPlayer.css'); */
+@import url('./Layout.css');
+
+/* Variables */
+:root {
+    font-size: 1rem;
+    font-family: "Courier New", "Arial", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --primary-color: #66249c;
+    --secondary-color: #879ac6;
+    --primary-bg: #f3f0f5;
+    --secondary-bg: #d3d3d3;
+    --body-bg: #302b35;
+    --hover-color: #c800ff88;
+    --btn-hover-transition: 0.2s ease-in-out;
+    --btn-hover-transform: translateY(-1.1px);
+    --btn-active-transform: translateY(0px); 
+}
+
+body {
+    margin: auto;
+    background-color: var(--body-bg);
+    color: var(--secondary-bg);
+}

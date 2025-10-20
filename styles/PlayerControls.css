@@ -1,0 +1,38 @@
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-button:hover {
+  opacity: 1;
+}
+
+.control-button.play-pause {
+  transform: scale(1.2);
+}
+
+.control-button svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.control-button.play-pause svg {
+  width: 32px;
+  height: 32px;
+}

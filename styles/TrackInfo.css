@@ -1,0 +1,21 @@
+.track-info {
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.song-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.5px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.artist-name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666;
+  margin: 0.25rem 0 0 0;
+}

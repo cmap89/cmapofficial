@@ -1,0 +1,24 @@
+.social-strip-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-link {
+    height: 100%;
+    width: 1.5em;
+    color: var(--primary-bg);
+
+    &:hover {
+        transform: var(--btn-hover-transform);
+        color: var(--hover-color);
+    }
+
+    &:active {
+    color: var(--primary-color);
+    }
+
+    &:visited {
+    color: var(--primary-color);
+    }
+}
