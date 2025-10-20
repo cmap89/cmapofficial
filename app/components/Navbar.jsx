@@ -35,9 +35,9 @@ export default function Navbar() {
                     href="/">
                     {<Image className='nav-logo' src={CmapLogo} alt="cmap logo" />}
                     </Link>
-                    <div className="menu-icon" onClick={handleClick}>
+                    {/* <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="all-socials-container">
                     <SocialsStrip/>

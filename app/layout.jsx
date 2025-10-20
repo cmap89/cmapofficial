@@ -17,17 +17,31 @@ imgOne : DownDayCover.src,
 imgTwo : WholeAgainCover.src,
 };
 
-const {imgOne, imgTwo} = imgs;
+// const {imgOne, imgTwo} = imgs;
 
 export const metadata = {
   title: 'cmap',
-  description: 'Music & More',
+  description: 'Official website for the band cmap featuring music and videos.',
+  keywords: 'CMAP, music, artist, booking, videos',
+  icons: {
+    icon: [
+      { url: '/Pics/CMAP_Logos_2022/PNG/500x500/CMAP_Logo_Tilted_With_Name_.png' },
+      { url: '/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/favicons/favicon.ico',
+    apple: '/favicons/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script src="https://kit.fontawesome.com/984ea53b98.js" crossOrigin="anonymous" async></script>
+      </head>
+      <body suppressHydrationWarning>
         <Navbar />
         <main className='hero-grid'>
         {/* <Sidebar img={imgOne} /> */}
