@@ -4,7 +4,7 @@
 /* Variables */
 :root {
     font-size: 1rem;
-    font-family: "Courier New", "Arial", sans-serif;
+    font-family: "Lacquer", "Arial", sans-serif;
     --secondary-font: "Roboto", sans-serif;
     --normal-font: 400;
     --bold-font: 700;
@@ -20,8 +20,16 @@
     --btn-active-transform: translateY(0px); 
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: auto;
+    margin: 0;
+    padding: 0;
     background-color: var(--body-bg);
     color: var(--secondary-bg);
 }

@@ -1,7 +1,11 @@
+import PageSection from "../components/Utils/PageSection";
+import BookingForm from "../components/BookingForm";
+
 export default function BookPage() {
-    return (
-        <div className="booking-container">
-            coming soon
-        </div>
-    )
+  return (
+    <PageSection className="booking-page-container" >
+      {/* <BookingForm /> */}
+      Coming Soon...
+    </PageSection>
+  );
 }

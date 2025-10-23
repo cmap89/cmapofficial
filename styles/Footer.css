@@ -1,12 +1,20 @@
 .footer-container {
+    height: 4rem;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     margin-top: auto;
 }
 
 .footer-content {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: aliceblue;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        width: 100%;
+    }    
 }

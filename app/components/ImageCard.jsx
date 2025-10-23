@@ -10,8 +10,7 @@ export default function ImageCard(props) {
         className='card-img'
         src={src} 
         alt="[description]"
-        width={375} 
-        height={375} />
+         />
         <span className={className || ""}>{msg}</span>
     </div> 
     );

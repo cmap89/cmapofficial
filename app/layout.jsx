@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+// import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Video from './components/Video';
 
@@ -7,6 +7,12 @@ import DownDayCover from '../public/Pics/down day artwork.jpg'
 import WholeAgainCover from '../public/Pics/Whole Again Artwork.jpg'
 
 import '../styles/globals.css';
+
+import { Lacquer } from 'next/font/google';
+const lacquer = Lacquer({
+    weight: '400',
+    subsets: ['latin']
+})
 
 import { displayVids } from "../data/videos"
 const [vidId1, vidId2, vidId3] = displayVids;
@@ -37,7 +43,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={lacquer.className}>
       <head>
         <script src="https://kit.fontawesome.com/984ea53b98.js" crossOrigin="anonymous" async></script>
       </head>

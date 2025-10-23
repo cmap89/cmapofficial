@@ -6,3 +6,20 @@
     align-items: center;
     gap: 20px;
 }
+
+.card-img {
+    height: 375px;
+    width: 375px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .img-container {
+        width: 80%;
+    }
+    
+    .card-img {
+        height: 300px;
+        width: 300px;
+    }    
+}
