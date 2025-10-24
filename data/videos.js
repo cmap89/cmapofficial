@@ -33,5 +33,5 @@ export const videos = [
 
 export const displayVids = [];
 for (let i = 1; i < 4; i++) {
-    displayVids.push(videos[i].youtubeId);
+    displayVids.push(videos[i]);
 }

@@ -13,7 +13,7 @@
 }
 
 .hamburger-container {
-  visibility: hidden;
+  display: none;
   cursor: pointer;
   padding: 1rem;
   align-items: center;

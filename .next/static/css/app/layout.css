@@ -40,7 +40,7 @@
 }
 
 .hamburger-container {
-  visibility: hidden;
+  display: none;
   cursor: pointer;
   padding: 1rem;
   align-items: center;
@@ -211,8 +211,12 @@ ul.nav-link-list {
     display: flex;
     justify-content: space-evenly;
     padding: 25px 0px;
-    height: 200px;
+    height: 18em;
     width: 100%;
+}
+
+.footer-vid {
+    width: 20%;
 }
 
 @media screen and (max-width: 480px) {
