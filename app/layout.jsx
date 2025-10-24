@@ -7,9 +7,7 @@ import { Lacquer } from 'next/font/google';
 const lacquer = Lacquer({
   weight: '400',
   subsets: ['latin']
-})
-
-
+});
 
 export const metadata = {
   title: 'cmap',
