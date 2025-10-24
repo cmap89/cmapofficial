@@ -1,16 +1,57 @@
 .booking-page-container {
-    /* border: solid red 1px; */
     height: 100vh;
-    width: 100%;
+    justify-content: center;
+    font-size: 3em;
+    }
+
+.bk-form-container {
+    color: white;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 3em ;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 30%;
+    /* background-color: var(--secondary-color); */
+    border-bottom: var(--primary-bg) solid 1px;
+    border-top: var(--primary-bg) solid 1px;
+    box-shadow: 0px 0px 3px 1px black;
+    border-radius: 0.5rem;
 }
 
-.bk-form-container {
+.bk-form-title {
+    font-size: 1em;
+}
+
+.bk-form-submit-btn {
+    width: 50%;
+    height: 3em;
+    border-radius: 0.5rem;
+}
+
+.bk-field {
+    width: 50%;
+    height: 3em;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+.bk-field-group {
     display: flex;
     flex-direction: column;
+    width: 48%;
 }
 
+label {
+    font-size: 1rem;
+    /* align-self: flex-start; */
+    margin-bottom: 0.25rem;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    
+
+}

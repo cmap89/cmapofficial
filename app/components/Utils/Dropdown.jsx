@@ -7,7 +7,8 @@ export default function Dropdown({ options, onSelect }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
 
-    const handleToggle = () => {
+    const handleToggle = (e) => {
+        e.preventDefault()
         setIsOpen(!isOpen);
     }
 
