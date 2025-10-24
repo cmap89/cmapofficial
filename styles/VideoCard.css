@@ -9,12 +9,10 @@
         background-color: grey;
         height: 25em;
     }
-    .vid-text {
-        padding: 1em 5em;
-    }
 }
 
 .vid-text {
+    padding: 1em 5em;
     width: 40%;
 }
 
@@ -32,9 +30,13 @@ iframe {
 }
 
 @media screen and (max-width: 480px) {
+    .vid-card-container {
+        height: 30em;
+    }
+    
     .vid-card-vid {
         width: 80%;
-        height: 34%;
+        height: 50%;
     }
 
     .vid-text {
