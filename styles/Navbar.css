@@ -3,11 +3,13 @@
   display: flex;
   align-items: center;
   background-color: var(--secondary-color) ;
-  position: relative;
+  position: sticky;
+  top: 0;
   color: var(--primary-bg);
   font-family: var(--font-family);
   height: 6em;
   padding: 0px 2em;
+  z-index: 100;
 }
 
 .hamburger-container {
@@ -86,10 +88,24 @@ ul.nav-link-list {
    .navbar-container {
     justify-content: space-between;
     position: relative;
-    width: 89%;
+    width: 100%;
     padding: 0 1rem;
     margin: 0;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .logo-container {
+    grid-column: 2;
+    justify-self: center;
+    width: auto;
+  }
+
+  .nav-logo {
+    height: inherit;
+    width: 6rem;
   }
 
   .nav-link-container {
@@ -103,6 +119,7 @@ ul.nav-link-list {
 
     &.nav-menu-open {
       right: 0;
+      width: 100%;
     }
   }
 
@@ -122,6 +139,8 @@ ul.nav-link-list {
 
   .hamburger-container {
     visibility: visible;
+    grid-column: 3;
+    justify-self: end;
   }
 
   .all-socials-container {
