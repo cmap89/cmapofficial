@@ -45,9 +45,6 @@
   padding: 1rem;
   align-items: center;
   justify-content: center;
-}
-
-.hamburger-container i {
   font-size: 1.5rem;
 }
 
@@ -135,19 +132,38 @@ ul.nav-link-list {
     width: 6rem;
   }
 
-  .nav-link-container {
+  .nav-link-container,.all-socials-container {
     position: fixed;
-    top: 6em;
-    right: -100%;
-    height: calc(100vh - 6em);
-    background-color: var(--secondary-color);
-    transition: right 0.3s ease-in-out;
     z-index: 1000;
+    right: -100%;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .nav-link-container{
+    top: 6em;
+    background-color: var(--secondary-color);
+    height: calc(100vh - 6em);
 
     &.nav-menu-open {
       right: 0;
       width: 100%;
     }
+  }
+
+  .all-socials-container {
+    bottom: 0;
+    width: 100%;
+
+    &.social-container-open {
+      right: 0;
+      width: 100%;
+    }
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
 
   .nav-link-list {
@@ -165,13 +181,9 @@ ul.nav-link-list {
   }
 
   .hamburger-container {
-    visibility: visible;
+    display: grid;
     grid-column: 3;
     justify-self: end;
-  }
-
-  .all-socials-container {
-    display: none;
   }
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -432,6 +444,10 @@ button {
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./styles/VideoCard.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************/
+.video-page {
+    padding-top: 1em;
+}
+
 .vid-card-container {
     width: 100%;
     height: 40em;
@@ -484,7 +500,7 @@ iframe {
 .booking-page-container {
     /* border: solid red 1px; */
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -496,6 +512,8 @@ iframe {
     display: flex;
     flex-direction: column;
 }
+
+
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./styles/PageSection.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
