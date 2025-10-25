@@ -6,14 +6,13 @@
 
 .bk-form-container {
     color: white;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 60%;
     width: 30%;
-    /* background-color: var(--secondary-color); */
     border-bottom: var(--primary-bg) solid 1px;
     border-top: var(--primary-bg) solid 1px;
     box-shadow: 0px 0px 3px 1px black;
@@ -30,28 +29,74 @@
     border-radius: 0.5rem;
 }
 
-.bk-field {
-    width: 50%;
-    height: 3em;
-    border-radius: 0.5rem;
-    border: none;
-    padding: 0.5rem;
+.bk-field-row {
+    display: flex;
+    width: 80%;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .bk-field-group {
     display: flex;
     flex-direction: column;
     width: 48%;
+    gap: 0.5rem;
+}
+
+.bk-field-group-full {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.bk-field {
+    width: 100%;
+    height: 3em;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
 }
 
 label {
     font-size: 1rem;
-    /* align-self: flex-start; */
+    align-self: flex-start;
     margin-bottom: 0.25rem;
-    margin-left: 0.5rem;
+    margin-left: 0.5rem; /* Matches the padding of .bk-field */
+}
+
+.bk-text-area {
+    height: 7rem;
 }
 
 @media screen and (max-width: 480px) {
+    .bk-form-container {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bk-form-title {
+        font-size: 0.7em;
+    }
     
+    .bk-field-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 80%;
+    }
+    
+    .bk-field-group {
+        width: 100%;
+    }
+    
+    .bk-field-group-full {
+        width: 80%;
+    }
+    
+    label {
+        margin-left: 0.5rem; /* Maintains alignment on mobile */
+    }
 
 }
