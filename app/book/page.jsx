@@ -5,7 +5,6 @@ export default function BookPage() {
   return (
     <PageSection className="booking-page-container" >
       <BookingForm />
-      {/* Coming Soon... */}
     </PageSection>
   );
 }

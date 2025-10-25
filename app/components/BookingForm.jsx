@@ -1,7 +1,6 @@
 "use client"
 
 import Form from "next/form";
-import Button from "./Utils/Button";
 import Dropdown from '../components/Utils/Dropdown';
 
 import { options, handleOptionSelect } from "../../data/dropdownOptions"
@@ -37,9 +36,6 @@ export default function BookingForm() {
         <label htmlFor="details">Enter any additional details</label>
       </div>
       <input onClick={stopRefresh} className="btn bk-form-submit-btn" type="submit" />
-
-
-      {/* <Button msg={"Submit"}></Button> */}
     </Form >
   );
 }
