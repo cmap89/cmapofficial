@@ -21,17 +21,17 @@ export default function FrontPage() {
         </p>
       </PageSection>
       <PageSection className="fp-featured-image">
-        <Link
-          href="https://distrokid.com/hyperfollow/cmap/down-day"
-          target="_blank"
-        >
-        </Link>
         <ImageCard
           src={downDayPic}
           className="fp-msg"
           msg="The new single Down Day is out now!"
         />
-        <Button className="fp-btn" msg="Stream Here" />
+        <Link
+          href="https://distrokid.com/hyperfollow/cmap/down-day"
+          target="_blank"
+        >
+          <Button className="fp-btn" msg="Stream Here" />
+        </Link>
       </PageSection>
       <PageSection className="fp-featured-video">
         <VideoCard
