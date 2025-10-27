@@ -115,7 +115,7 @@ ul.nav-link-list {
   .nav-link-container{
     top: 6em;
     background-color: var(--secondary-color);
-    height: calc(100vh - 6em);
+    height: calc(100vh - 12em);
 
     &.nav-menu-open {
       right: 0;
@@ -126,6 +126,7 @@ ul.nav-link-list {
   .all-socials-container {
     bottom: 0;
     width: 100%;
+    background-color: var(--secondary-color);
 
     &.social-container-open {
       right: 0;
