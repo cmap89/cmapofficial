@@ -1,0 +1,38 @@
+{
+    "name": "CMAP Official Website",
+    "short_name": "CMAP",
+    "description": "Official website for the band CMAP featuring music and videos",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#879AC6",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/Pics/CMAP_Logos_2022/PNG/500x500/CMAP_Logo_Tilted_With_Name_.png",
+            "sizes": "500x500",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicons/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "categories": [
+        "music",
+        "entertainment"
+    ],
+    "lang": "en-US"
+}
