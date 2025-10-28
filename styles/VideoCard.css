@@ -17,11 +17,11 @@
 
 .vid-text {
     padding: 1em 5em;
-    width: 40%;
+    width: 65%;
 }
 
 .vid-card-vid {
-    width: 40%;
+    width: 55%;
     height: 70%;
     border-radius: 1em;
 }
@@ -46,5 +46,28 @@ iframe {
     .vid-text {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .vid-card-vid {
+        width: 70%;
+        height: 65%;
+    }
+    
+    .vid-text {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .vid-card-vid {
+        width: 65%;
+    }
+    
+    .vid-text {
+        width: 80%;
     }
 }
