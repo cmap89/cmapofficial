@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Button from "./Button";
 
-export default function Dropdown({ options, onSelect }) {
+export default function Dropdown({ options, onSelect, selectedOption }) {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(null);
+    // const [selectedOption, setSelectedOption] = useState(null);
 
     const handleToggle = (e) => {
         e.preventDefault()
@@ -13,7 +13,7 @@ export default function Dropdown({ options, onSelect }) {
     }
 
     const handleOptionClicked = option => {
-        setSelectedOption(option);
+        // setSelectedOption(option);
         onSelect(option);
         setIsOpen(false);
     }

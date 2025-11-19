@@ -69,6 +69,24 @@ label {
     height: 7rem;
 }
 
+.bk-form-status {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.bk-form-status:contains("Thanks") {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.bk-form-status:contains("Oops") {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
 @media screen and (max-width: 480px) {
     .bk-form-container {
         width: 90%;
