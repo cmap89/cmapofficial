@@ -6,8 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:cloudflare": "opennextjs-cloudflare",
-    "deploy": "npm run build:cloudflare && wrangler deploy"
+    "pages:build": "opennextjs-cloudflare",
+    "deploy": "npm run pages:build && wrangler pages deploy .open-next/worker"
   },
   "engines": {
     "node": ">=18.0.0"
