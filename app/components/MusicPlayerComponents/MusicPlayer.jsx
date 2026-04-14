@@ -25,7 +25,6 @@ const tracks = [
 export default function MusicPlayer() {
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.8);
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -44,7 +43,7 @@ export default function MusicPlayer() {
     const current = audioRef.current.currentTime;
     const total = audioRef.current.duration;
     const progress = (current / total) * 100;
-    
+
     setCurrentTime(current);
     setProgress(progress || 0);
   };
@@ -68,28 +67,28 @@ export default function MusicPlayer() {
 
   return (
     <>
-    <div className='player'>
-      <TrackInfo track={currentTrack} />
-      <audio
-        ref={audioRef}
-        src={currentTrack.src}
-        onTimeUpdate={handleTimeUpdate}
-        onLoadedMetadata={handleLoadedMetadata}
-        onEnded={() => skipTrack('next')}
+      <div className='player'>
+        <TrackInfo track={currentTrack} />
+        <audio
+          ref={audioRef}
+          src={currentTrack.src}
+          onTimeUpdate={handleTimeUpdate}
+          onLoadedMetadata={handleLoadedMetadata}
+          onEnded={() => skipTrack('next')}
         />
-      <PlayerControls
-        isPlaying={isPlaying}
-        onPlayPause={() => setIsPlaying(!isPlaying)}
-        onSkipNext={() => skipTrack('next')}
-        onSkipPrev={() => skipTrack('prev')}
+        <PlayerControls
+          isPlaying={isPlaying}
+          onPlayPause={() => setIsPlaying(!isPlaying)}
+          onSkipNext={() => skipTrack('next')}
+          onSkipPrev={() => skipTrack('prev')}
         />
-      <ProgressBar 
-        currentTime={currentTime}
-        duration={duration}
-        progress={progress} 
-        onScrub={handleScrub}
-      />
-    </div>
+        <ProgressBar
+          currentTime={currentTime}
+          duration={duration}
+          progress={progress}
+          onScrub={handleScrub}
+        />
+      </div>
     </>
   );
 }
