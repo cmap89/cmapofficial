@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['img.youtube.com'], // For YouTube thumbnails
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+      },
+    ],
+    // Cloudflare doesn't support Next.js Image Optimization out of the box
+    unoptimized: true,
   },
-  // Optimize static assets
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   trailingSlash: false,
 }
 
