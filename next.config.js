@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -7,7 +8,6 @@ const nextConfig = {
         hostname: 'img.youtube.com',
       },
     ],
-    // Cloudflare doesn't support Next.js Image Optimization out of the box
     unoptimized: true,
   },
   trailingSlash: false,
