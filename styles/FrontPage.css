@@ -4,14 +4,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8em;
 }
 
 .fp-description {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 90vh;
     background-color: #000;
     position: relative;
-    height: 90vh;
     overflow: auto;
 
     &::before {
@@ -31,34 +33,34 @@
 
 .fp-headline {
     color: var(--primary-bg);
-    font-size: 4rem;
     position: relative;
     z-index: 2;
-    padding-left: 11em;
+    padding-left: 15em;
 }
 
 .fp-featured-image {
     gap: 20px;
 }
 
-.btn.fp-btn {
-    width: 9em;
-    font-size: medium;
-}
 
 .fp-msg {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
+.btn.fp-btn {
+    font-family: '__nextjs-Geist Mono';
+    width: auto;
+    font-size: 0.6em;
+    padding: 0.7em;
+}
 
 .fp-featured-video {
-    width: 85%;
-    gap: 0;
+    height: 10em;
 
     .fp-vid-title {
         display: flex;
         justify-content: center;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 

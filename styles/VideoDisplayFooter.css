@@ -7,13 +7,14 @@
 .footer-video-display {
     display: flex;
     justify-content: space-evenly;
-    padding: 25px 0px;
-    height: 18em;
+    padding: 1em 0 2em;
     width: 100%;
 }
 
 .footer-vid {
-    width: 20%;
+    aspect-ratio: 16/9;
+    width: 30%;
+    border-radius: 0.5em;
 }
 
 @media screen and (max-width: 1000px) {

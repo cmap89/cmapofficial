@@ -10,14 +10,19 @@ import PageSection from "./components/Utils/PageSection";
 export default function FrontPage() {
   return (
     <div className="front-page-container">
-      <PageSection className="fp-description">
-        <h1 className="fp-headline">
-          Audio Engineer
-          <br />
-          Musician
-          <br />
-          Educator
-        </h1>
+      <PageSection className="fp-main">
+        <div className="fp-description">
+          <div className="fp-headline">
+            <h1>Charlie Sharp</h1>
+            <h2 className="fp-name">
+              Audio Engineer
+              <br />
+              Musician
+              <br />
+              Educator
+            </h2>
+          </div>
+        </div>
       </PageSection>
       <PageSection className="fp-featured-image">
         <ImageCard
@@ -38,9 +43,6 @@ export default function FrontPage() {
           title="Down Day Official Audio"
           vidTitleClass="fp-vid-title"
         />
-      </PageSection>
-      <PageSection>
-        <form action=""></form>
       </PageSection>
     </div>
   );

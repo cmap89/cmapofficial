@@ -3,10 +3,15 @@ import Footer from './components/Footer';
 import VideoStrip from './components/VideoStrip';
 import '../styles/globals.css';
 
-import { Lacquer } from 'next/font/google';
-const lacquer = Lacquer({
+import { Reenie_Beanie, Nothing_You_Could_Do } from 'next/font/google';
+const reenie = Reenie_Beanie({
   weight: '400',
-  subsets: ['latin']
+  subsets: ['latin'],
+});
+
+const nothingYouCouldDo = Nothing_You_Could_Do({
+  weight: '400',
+  subsets: ['latin'],
 });
 
 export const metadata = {
@@ -27,7 +32,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={lacquer.className}>
+    <html lang="en" suppressHydrationWarning className={reenie.className} style={{ '--secondary-font': nothingYouCouldDo.style.fontFamily }}>
       <head>
         <script src="https://kit.fontawesome.com/984ea53b98.js" crossOrigin="anonymous" async></script>
       </head>
