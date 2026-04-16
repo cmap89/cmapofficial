@@ -8,10 +8,8 @@
 }
 
 .fp-description {
-    display: flex;
     justify-content: center;
-    background-color: #504f4f;
-    padding: 2rem;
+    background-color: #000;
     position: relative;
     height: 90vh;
     overflow: auto;
@@ -23,23 +21,20 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url("/Pics/cmap_promo_pic_3.jpg");
-        background-position-y: 23%;
-        background-size: cover;
+        background-image: url("/Pics/Headshot.jpeg");
         background-repeat: no-repeat;
-        opacity: 0.3;
+        background-size: contain;
+        background-position-x: 28%;
         z-index: 1;
     }
 }
 
-.fp-paragraph {
+.fp-headline {
     color: var(--primary-bg);
-    width: 40%;
-    font-size: 1.5em;
-    font-weight: var(--bold-font);
+    font-size: 4rem;
     position: relative;
-    z-index: 2;  /* Keep text above background */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* For better readability */
+    z-index: 2;
+    padding-left: 11em;
 }
 
 .fp-featured-image {

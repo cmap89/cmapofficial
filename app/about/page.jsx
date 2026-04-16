@@ -11,13 +11,14 @@ export default function FrontPage() {
   return (
     <div className="front-page-container">
       <PageSection className="fp-description">
-        <h1 className="fp-headline">
-          Audio Engineer
-          <br />
-          Musician
-          <br />
-          Educator
-        </h1>
+        <p className="fp-paragraph">
+          From the sun-soaked city of Belize to the foggy streets of San
+          Francisco, cmap’s journey echoes in every riff and rhythm, igniting
+          listeners with an electrifying arsenal of musical prowess. The
+          experience seamlessly blends rock, punk, and Caribbean influences into
+          an explosive sonic cocktail. Get ready to ride the wave of sound that
+          defines the new era of modern Belizean rock.
+        </p>
       </PageSection>
       <PageSection className="fp-featured-image">
         <ImageCard

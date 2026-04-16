@@ -35,6 +35,9 @@ export default function Navbar() {
             <div className={`nav-link-container ${isMenuOpen ? 'nav-menu-open' : ''}`}>
                 <ul className='nav-link-list'>
                     <li className="nav-item">
+                        <Link onClick={closeMenu} href="/about">About</Link>
+                    </li>
+                    <li className="nav-item">
                         <Link onClick={closeMenu} href="https://linktr.ee/cmapmusicofficial" target="_blank" >Music</Link>
                     </li>
                     <li className="nav-item">
