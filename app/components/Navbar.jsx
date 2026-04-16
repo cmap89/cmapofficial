@@ -41,7 +41,7 @@ export default function Navbar() {
                         <Link onClick={closeMenu} href="/videos">Videos</Link>
                     </li>
                     <li className="nav-item">
-                        <Link onClick={closeMenu} href="/book">Book</Link>
+                        <Link onClick={closeMenu} href="/services">Services</Link>
                     </li>
                     {/* <li className="nav-item">
                         Merch
