@@ -1,25 +1,15 @@
-.front-page-container, .band-page-container {
-    width: 100%;
-    height: 100%;
+.bpg-background {
+    background-color: #00000075;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.page-section.fp-main {
-    margin-bottom: 0;
-}
-
-.fp-description {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 90vh;
-    background-color: #000;
+    padding: 0 2em;
     position: relative;
     overflow: auto;
-
+    
     &::before {
         content: '';
         position: absolute;
@@ -27,52 +17,48 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url("/Pics/Headshot.jpeg");
+        background-image: url("/Pics/cmap_promo_pic_3.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position-x: 28%;
+        background-size: cover;
+        background-position-y: 22%;
+        opacity: 0.5;
         z-index: 1;
     }
 }
 
-.fp-headline {
+.bpg-bio {
     color: var(--primary-bg);
     position: relative;
     z-index: 2;
-    padding-left: 15em;
 }
 
-.page-section.fp-contact-section {
-    background-color:#fff;
-    color: var(--body-bg);
-    height: 25rem;
-    justify-content: space-evenly;
-}
-
-.fp-featured-image {
+.bpg-featured-image {
     gap: 20px;
 }
 
-.fp-msg {
+
+.bpg-msg {
     font-size: 1.5em;
 }
 
-.btn.fp-btn {
+.btn.bpg-btn {
     font-family: '__nextjs-Geist Mono';
     width: auto;
     font-size: 0.6em;
     padding: 0.7em;
 }
 
-.fp-featured-video {
-    height: 10em;
-
-    .fp-vid-title {
-        display: flex;
-        justify-content: center;
-        font-size: 1.5em;
-    }
+.bpg-socials-section {
+    height: 9rem;
+    font-size: 1.3em;
+    justify-content: space-evenly;
 }
+
+.socials-strip-container.bpg-socials {
+
+}
+
+/*
 
 
 @media screen and (max-width: 480px) {
@@ -99,4 +85,4 @@
     .fp-vid-title {
         text-align: center;
     }
-}
+} */

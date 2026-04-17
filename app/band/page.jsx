@@ -5,13 +5,14 @@ import Button from "../components/Utils/Button";
 import downDayPic from "../../public/Pics/down day artwork.jpg";
 import ImageCard from "../components/ImageCard";
 import PageSection from "../components/Utils/PageSection";
+import SocialsStrip from "../components/SocialsStrip";
 
 export default function AboutPage() {
   return (
-    <div className="about-page-container">
-      <PageSection className="ap-section">
-        <div className="ap-background">
-          <h2 className="ap-bio">
+    <div className="band-page-container">
+      <PageSection className="bpg-section">
+        <div className="bpg-background">
+          <h2 className="bpg-bio">
             From the sun-soaked city of Belize to the foggy streets of San
             Francisco, cmap’s journey echoes in every riff and rhythm, igniting
             listeners with an electrifying arsenal of musical prowess. The
@@ -21,18 +22,22 @@ export default function AboutPage() {
           </h2>
         </div>
       </PageSection>
-      <PageSection className="fp-featured-image">
+      <PageSection className="bpg-featured-image">
         <ImageCard
           src={downDayPic}
-          className="fp-msg"
+          className="bpg-msg"
           msg="The new single Down Day is out now!"
         />
         <Link
           href="https://distrokid.com/hyperfollow/cmap/down-day"
           target="_blank"
         >
-          <Button className="fp-btn" msg="Stream Here" />
+          <Button className="bpg-btn" msg="Stream The Song" />
         </Link>
+      </PageSection>
+      <PageSection className="bpg-socials-section" >
+        <h2>Follow cmap on all platforms</h2>
+        <SocialsStrip className="bpg-socials" exclude={['instagram-services', 'facebook-services']} />
       </PageSection>
     </div>
   );

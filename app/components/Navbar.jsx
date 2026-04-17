@@ -38,7 +38,7 @@ export default function Navbar() {
                         <Link onClick={closeMenu} href="/about">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link onClick={closeMenu} href="https://linktr.ee/cmapmusicofficial" target="_blank" >Music</Link>
+                        <Link onClick={closeMenu} href="/band">Band</Link>
                     </li>
                     <li className="nav-item">
                         <Link onClick={closeMenu} href="/videos">Videos</Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <i className={isMenuOpen ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
             <div className={`all-socials-container ${isMenuOpen ? 'social-container-open' : ''}`}>
-                <SocialsStrip menuStatus={isMenuOpen} clickEvent={closeMenu} />
+                <SocialsStrip exclude={['instagram-band', 'facebook-band', 'bandcamp', 'soundcloud', 'itunes']} menuStatus={isMenuOpen} clickEvent={closeMenu} />
             </div>
         </nav>
     )

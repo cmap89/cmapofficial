@@ -6,6 +6,7 @@ import downDayPic from "../public/Pics/down day artwork.jpg";
 import VideoCard from "./components/VideoCard";
 import ImageCard from "./components/ImageCard";
 import PageSection from "./components/Utils/PageSection";
+import FormCard from "./components/FormCard";
 
 export default function FrontPage() {
   return (
@@ -24,24 +25,12 @@ export default function FrontPage() {
           </div>
         </div>
       </PageSection>
-      <PageSection className="fp-featured-image">
-        <ImageCard
-          src={downDayPic}
-          className="fp-msg"
-          msg="The new single Down Day is out now!"
-        />
-        <Link
-          href="https://distrokid.com/hyperfollow/cmap/down-day"
-          target="_blank"
-        >
-          <Button className="fp-btn" msg="Stream Here" />
-        </Link>
-      </PageSection>
-      <PageSection className="fp-featured-video">
-        <VideoCard
-          youtubeId={"mzmf3YeukF0"}
-          title="Down Day Official Audio"
-          vidTitleClass="fp-vid-title"
+      <PageSection className="fp-contact-section">
+        <h1>I'll help you make the music you always wanted to make</h1>
+        <FormCard
+          scriptSrc={"https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9QenBKViIsIldlYnNpdGVJRCI6Indic19WMDRKeCIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3pnZzdESm4ifQ=="}
+          title={"I believe when you find your passion, you find yourself"}
+          description={"Need an engineer, musician, teacher, or just have a question? Feel free to reach out."}
         />
       </PageSection>
     </div>

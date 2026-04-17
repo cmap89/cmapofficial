@@ -1,0 +1,53 @@
+.form-card {
+    border: solid white 2px;
+    color: var(--body-bg);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.form-desc {
+    font-family: var(--secondary-font);
+    font-size: 0.7em;
+    padding-bottom: 22%;
+}
+
+.main-form {
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .bk-form-container {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bk-form-title {
+        font-size: 0.7em;
+    }
+    
+    .bk-field-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 80%;
+    }
+    
+    .bk-field-group {
+        width: 100%;
+    }
+    
+    .bk-field-group-full {
+        width: 80%;
+    }
+    
+    label {
+        margin-left: 0.5rem; /* Maintains alignment on mobile */
+    }
+
+}

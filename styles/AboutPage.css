@@ -1,4 +1,4 @@
-.ap-background {
+/* .bpg-background {
     background-color: #00000075;
     display: flex;
     flex-direction: column;
@@ -26,38 +26,29 @@
     }
 }
 
-.ap-bio {
+.bpg-bio {
     color: var(--primary-bg);
     position: relative;
     z-index: 2;
 }
 
-/*
-.fp-featured-image {
+.bpg-featured-image {
     gap: 20px;
 }
 
 
-.fp-msg {
+.bpg-msg {
     font-size: 1.5em;
 }
 
-.btn.fp-btn {
+.btn.bpg-btn {
     font-family: '__nextjs-Geist Mono';
     width: auto;
     font-size: 0.6em;
     padding: 0.7em;
 }
 
-.fp-featured-video {
-    height: 10em;
-
-    .fp-vid-title {
-        display: flex;
-        justify-content: center;
-        font-size: 1.5em;
-    }
-}
+/*
 
 
 @media screen and (max-width: 480px) {
