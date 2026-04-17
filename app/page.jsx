@@ -1,10 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import Button from "./components/Utils/Button";
-import downDayPic from "../public/Pics/down day artwork.jpg";
-import VideoCard from "./components/VideoCard";
-import ImageCard from "./components/ImageCard";
 import PageSection from "./components/Utils/PageSection";
 import FormCard from "./components/FormCard";
 
@@ -26,7 +21,7 @@ export default function FrontPage() {
         </div>
       </PageSection>
       <PageSection className="fp-contact-section">
-        <h1>I'll help you make the music you always wanted to make</h1>
+        <h1>I&apos;ll help you make the music you always wanted to make</h1>
         <FormCard
           scriptSrc={"https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9QenBKViIsIldlYnNpdGVJRCI6Indic19WMDRKeCIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3pnZzdESm4ifQ=="}
           title={"I believe when you find your passion, you find yourself"}
