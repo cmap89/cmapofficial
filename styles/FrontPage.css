@@ -49,54 +49,42 @@
     justify-content: space-evenly;
 }
 
-.fp-featured-image {
-    gap: 20px;
-}
 
-.fp-msg {
-    font-size: 1.5em;
-}
+@media screen and (max-width: 768px) {
+    .fp-description{
+        align-items: flex-start;
+        &::before {
+            background-position-x: 0%;
+        }
+    }
 
-.btn.fp-btn {
-    font-family: '__nextjs-Geist Mono';
-    width: auto;
-    font-size: 0.6em;
-    padding: 0.7em;
-}
+    .fp-headline {
+        position: relative;
+        padding: 2em 2em 0 12em;
+    }
 
-.fp-featured-video {
-    height: 10em;
-
-    .fp-vid-title {
-        display: flex;
-        justify-content: center;
-        font-size: 1.5em;
+    .fp-contact-heading {
+        padding: 0 1em;
     }
 }
-
 
 @media screen and (max-width: 480px) {
-    .fp-paragraph {
-        width: 100%;
+    .fp-description{
+        &::before {
+            opacity: 0.8;
+        }
+    }
+    .fp-headline {
+        padding: 6em 0.4em;
     }
 
-    .fp-msg {
-        text-align: center;
+    .form-card.fp-contact-card {
+        flex-direction: column;
+        padding: 0 ;
     }
 
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .fp-paragraph {
-        width: 100%;
+    .fp-contact-card .form-desc {
+        padding-bottom: 0;
     }
 
-    .fp-msg {
-        width: 80%;
-        text-align: center;
-    }   
-
-    .fp-vid-title {
-        text-align: center;
-    }
 }

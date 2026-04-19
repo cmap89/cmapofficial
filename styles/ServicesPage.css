@@ -1,0 +1,25 @@
+.services-page-container {
+    font-family: math;
+    background-color: #fff;
+    color: var(--body-bg);
+    font-size: 0.6em;
+}
+
+.service-desc-sect {
+    padding: 3em 2em 0;
+    margin-bottom: 1rem;
+}
+
+.skill-list-sect {
+    align-items: flex-start;
+    height: auto;
+    padding: 0 3em;
+}
+
+.skill-list {
+    list-style: none;
+    height: 23em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

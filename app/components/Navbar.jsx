@@ -46,9 +46,6 @@ export default function Navbar() {
                     <li className="nav-item">
                         <Link onClick={closeMenu} href="/services">Services</Link>
                     </li>
-                    {/* <li className="nav-item">
-                        Merch
-                        </li> */}
                 </ul>
             </div>
             <div className="logo-container">

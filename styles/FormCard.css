@@ -12,6 +12,7 @@
 .form-desc {
     font-family: var(--secondary-font);
     font-size: 0.7em;
+    width: 50%;
     padding-bottom: 22%;
 }
 

@@ -6,7 +6,7 @@ export default function FormCard({
   scriptSrc,
   title,
   description,
-  className = "form-card"
+  className
 }) {
   const containerRef = useRef(null);
   const scriptLoaded = useRef(false);
@@ -30,7 +30,7 @@ export default function FormCard({
   }, [scriptSrc]);
 
   return (
-    <div className={className}>
+    <div className={` form-card ${className}`}>
       <div className="form-desc">
         {title && <h2>{title}</h2>}
         {description && <p>{description}</p>}
