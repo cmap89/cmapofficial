@@ -33,3 +33,17 @@ body {
     background-color: var(--body-bg);
     color: var(--secondary-bg);
 }
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+&:hover {
+    color: var(--hover-color);
+  }
+
+  &:active {
+    color: var(--primary-color);
+    transition: none;
+  }
+}

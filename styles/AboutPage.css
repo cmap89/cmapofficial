@@ -1,3 +1,7 @@
+.about-page-container {
+    color: var(--secondary-bg);
+}
+
 .page-section.ap-bio-sect{
     margin-bottom: 0;
 }
