@@ -1,8 +1,8 @@
 .services-page-container {
-    font-family: math;
-    background-color: #fff;
-    color: var(--body-bg);
-    font-size: 0.6em;
+    /* font-family: math; */
+    /* font-size: 0.6em; */
+    /* background-color: var(--secondary-color); */
+    color: var(--secondary-bg);
 }
 
 .service-desc-sect {
@@ -12,14 +12,24 @@
 
 .skill-list-sect {
     align-items: flex-start;
-    height: auto;
+    justify-content: space-evenly;
+    min-height: 22em;
     padding: 0 3em;
+    margin-bottom: 0;
 }
 
 .skill-list {
     list-style: none;
-    height: 23em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.sp-contact-sect {
+    background-color: #fff;
+    color: var(--body-bg);
+    justify-content: space-evenly;
+    height: 20em;
+    margin-bottom: 2em;
 }
