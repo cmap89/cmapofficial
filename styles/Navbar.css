@@ -125,7 +125,9 @@ ul.nav-link-list {
   .nav-link-container{
     background-color: var(--secondary-color);
     top: 3.2rem;
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(100vh - 3.2rem);
+    overflow-y: auto;
 
     &.nav-menu-open {
       right: 0;
@@ -135,8 +137,12 @@ ul.nav-link-list {
   .nav-link-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 80vh;
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+    /* height: 80vh; */
+    min-height: min-content;
+    padding: 1rem 0;
+    gap: 0.5rem;
   }
 
   .all-socials-container {
@@ -160,7 +166,7 @@ ul.nav-link-list {
     width: 100%;
     text-align: center;
     padding: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .hamburger-container {

@@ -47,7 +47,13 @@
     color: var(--body-bg);
     height: 25rem;
     justify-content: space-evenly;
+    padding: 1em;
 }
+
+.fp-contact-heading {
+    font-size: clamp(32px, 8vw, 60px);
+}
+
 
 .fp-contact-card {
     font-size: 0.7em;
@@ -65,10 +71,6 @@
         position: relative;
         padding: 2em 2em 0 12em;
     }
-
-    .fp-contact-heading {
-        padding: 0 1em;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -78,7 +80,14 @@
         }
     }
     .fp-headline {
-        padding: 6em 0.4em;
+        padding: 42vh 0 0 0;
+    }
+
+    .page-section.fp-contact-section{
+        height: auto;
+        gap: 0.5em;
+        margin-bottom: 0;
+        padding: 0.8rem;
     }
 
     .form-card.fp-contact-card {
@@ -86,8 +95,14 @@
         padding: 0 ;
     }
 
+    .fp-contact-card .main-form {
+        width: 100%;
+    }
+
     .fp-contact-card .form-desc {
         padding-bottom: 0;
+        width: 90%;
+        font-size: .7em;
     }
 
 }

@@ -33,6 +33,7 @@ export default function FormCard({
     <div className={` form-card ${className}`}>
       <div className="form-desc">
         {title && <h2>{title}</h2>}
+        <br />
         {description && <p>{description}</p>}
       </div>
       <div className="main-form" ref={containerRef}></div>
