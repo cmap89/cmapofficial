@@ -1,6 +1,6 @@
 .btn {
     width: 5rem;
-    font-family: inherit;
+    font-family: var(--secondary-font);
     cursor: pointer;
     color: var(--primary-color);
     border: purple solid 1px;
