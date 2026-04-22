@@ -28,7 +28,7 @@
 
 .bpg-bio {
     font-family: var(--secondary-font);
-    font-size: clamp(1rem, 7vw, 1.5rem);
+    font-size: clamp(.5rem, 5vw, 1rem);
     color: var(--primary-bg);
     position: relative;
     z-index: 2;
