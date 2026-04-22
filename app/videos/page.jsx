@@ -5,9 +5,9 @@ import PageSection from "../components/Utils/PageSection";
 
 export default function VideosPage() {
     return (
-        <div className="video-page">
+        <div className="video-page-container">
             {videos.map(vid => (
-                <PageSection key={vid.id}>
+                <PageSection className="vp-vid-section" key={vid.id}>
                     <VideoCard id={vid.id} title={vid.title} youtubeId={vid.youtubeId} description={vid.description} />
                 </PageSection>
             ))}

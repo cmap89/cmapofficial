@@ -3,13 +3,13 @@ import Footer from './components/Footer';
 import VideoStrip from './components/VideoStrip';
 import '../styles/globals.css';
 
-import { Reenie_Beanie, Nothing_You_Could_Do } from 'next/font/google';
+import { Reenie_Beanie, Cantarell } from 'next/font/google';
 const reenie = Reenie_Beanie({
   weight: '400',
   subsets: ['latin'],
 });
 
-const nothingYouCouldDo = Nothing_You_Could_Do({
+const cantarell = Cantarell({
   weight: '400',
   subsets: ['latin'],
 });
@@ -32,7 +32,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={reenie.className} style={{ '--secondary-font': nothingYouCouldDo.style.fontFamily }}>
+    <html lang="en" suppressHydrationWarning className={reenie.className} style={{ '--secondary-font': cantarell.style.fontFamily }}>
       <head>
         <script src="https://kit.fontawesome.com/984ea53b98.js" crossOrigin="anonymous" async></script>
       </head>

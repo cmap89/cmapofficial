@@ -27,6 +27,7 @@
 }
 
 .bpg-bio {
+    font-family: var(--secondary-font);
     font-size: clamp(1rem, 7vw, 1.5rem);
     color: var(--primary-bg);
     position: relative;
@@ -51,6 +52,7 @@
 
 .bpg-socials-section {
     height: 9rem;
+    align-items: center;
     justify-content: space-evenly;
     padding: 0 1rem;
 }
