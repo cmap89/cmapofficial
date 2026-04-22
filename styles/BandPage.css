@@ -68,11 +68,7 @@ font-size: clamp(1rem, 7vw, 1.5rem);
     }
     
     .bpg-socials-section {
-        width: auto;
+        padding: 0;
         margin-bottom: 1rem;
     }
 }
-
-/*
-@media screen and (min-width: 481px) and (max-width: 768px) {
-} */
