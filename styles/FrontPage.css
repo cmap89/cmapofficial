@@ -54,11 +54,6 @@
     font-size: clamp(32px, 8vw, 60px);
 }
 
-
-.fp-contact-card {
-    font-size: 0.7em;
-}
-
 @media screen and (max-width: 768px) {
     .fp-description{
         align-items: flex-start;
@@ -89,20 +84,4 @@
         margin-bottom: 0;
         padding: 0.8rem;
     }
-
-    .form-card.fp-contact-card {
-        flex-direction: column;
-        padding: 0 ;
-    }
-
-    .fp-contact-card .main-form {
-        width: 100%;
-    }
-
-    .fp-contact-card .form-desc {
-        padding-bottom: 0;
-        width: 90%;
-        font-size: .7em;
-    }
-
 }

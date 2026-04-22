@@ -25,8 +25,8 @@ export default function BookPage() {
       </PageSection>
       <PageSection className="sp-contact-sect" >
         <h2 className="sp-contact-heading">Contact me today</h2>
-        <FormCard scriptSrc={"https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9QenBKViIsIldlYnNpdGVJRCI6Indic19WMDRKeCIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3pnZzdESm4ifQ=="} title={'text 1'} description={'txt2'} ></FormCard>
+        <FormCard scriptSrc={"https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9QenBKViIsIldlYnNpdGVJRCI6Indic19WMDRKeCIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3pnZzdESm4ifQ=="} title={`Let's start your musical journey`} description={``} ></FormCard>
       </PageSection>
-    </div>
+    </div >
   );
 }

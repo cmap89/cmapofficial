@@ -1,4 +1,5 @@
 .form-card {
+    font-size: 0.7em;
     border: solid white 2px;
     color: var(--body-bg);
     background-color: #fff;
@@ -19,34 +20,18 @@
 }
 
 @media screen and (max-width: 480px) {
-    .bk-form-container {
-        width: 90%;
-        height: 90%;
-        display: flex;
+   .form-card {
         flex-direction: column;
-        align-items: center;
+        padding: 0 ;
     }
 
-    .bk-form-title {
-        font-size: 0.7em;
-    }
-    
-    .bk-field-row {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 80%;
-    }
-    
-    .bk-field-group {
+    .main-form {
         width: 100%;
     }
-    
-    .bk-field-group-full {
-        width: 80%;
-    }
-    
-    label {
-        margin-left: 0.5rem; /* Maintains alignment on mobile */
-    }
 
+    .form-desc {
+        padding-bottom: 0;
+        width: 90%;
+        font-size: .7em;
+    }
 }
