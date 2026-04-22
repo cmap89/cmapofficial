@@ -2,6 +2,7 @@
 
 import PageSection from "../components/Utils/PageSection";
 import Link from "next/link";
+import Button from "../components/Utils/Button";
 
 export default function AboutPage() {
   return (
@@ -20,8 +21,8 @@ export default function AboutPage() {
             </p>
           </div>
           <br />
-          <Link className="ap-service-link" href="/services" >
-            <h2>Want to get in touch?</h2>
+          <Link className="ap-service-link" href="/services#sp-contact-form" >
+            <Button className="bpg-btn" msg="Want to get in touch?" />
           </Link>
         </div>
       </PageSection>

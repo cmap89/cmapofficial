@@ -65,4 +65,8 @@ iframe {
         width: 100%;
         text-align: center;
     }
+
+    .page-section.vp-vid-section {
+        padding: 0 0.3rem;
+    }
 }

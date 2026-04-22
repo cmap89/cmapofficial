@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 
 export default function FormCard({
+  id,
   scriptSrc,
   title,
   description,
@@ -31,7 +32,8 @@ export default function FormCard({
 
   return (
     <div className={` form-card ${className}`}>
-      <div className="form-desc">
+      <div id={id}
+        className="form-desc">
         {title && <h2>{title}</h2>}
         <br />
         {description && <p>{description}</p>}
