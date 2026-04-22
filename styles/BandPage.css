@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     height: 90vh;
-    padding: 0 2em;
+    padding: 0 1.5em;
     position: relative;
     overflow: auto;
     
@@ -27,6 +27,7 @@
 }
 
 .bpg-bio {
+    font-size: clamp(1rem, 7vw, 1.5rem);
     color: var(--primary-bg);
     position: relative;
     z-index: 2;
@@ -38,7 +39,7 @@
 
 
 .bpg-msg {
-    font-size: 1.5em;
+    font-size: clamp(1rem, 7vw, 1.5rem);
 }
 
 .btn.bpg-btn {
@@ -50,39 +51,26 @@
 
 .bpg-socials-section {
     height: 9rem;
-    font-size: 1.3em;
     justify-content: space-evenly;
+    padding: 0 1rem;
 }
 
-.socials-strip-container.bpg-socials {
-
+.bpg-socials-section h2 {
+font-size: clamp(1rem, 7vw, 1.5rem);
 }
-
-/*
 
 
 @media screen and (max-width: 480px) {
-    .fp-paragraph {
-        width: 100%;
+    .bpg-featured-image {
+        margin-bottom: 0;
     }
-
-    .fp-msg {
-        text-align: center;
+    
+    .bpg-socials-section {
+        width: auto;
+        margin-bottom: 1rem;
     }
-
 }
 
+/*
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .fp-paragraph {
-        width: 100%;
-    }
-
-    .fp-msg {
-        width: 80%;
-        text-align: center;
-    }   
-
-    .fp-vid-title {
-        text-align: center;
-    }
 } */
