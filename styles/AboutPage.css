@@ -10,10 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    padding: 1em 3em 0;
+    gap: 1rem;
+    padding-top: 1rem;
 }
 
 .ap-bio-content {

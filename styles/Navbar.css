@@ -120,12 +120,12 @@ ul.nav-link-list {
     width: 100%;
     right: 100%;
     z-index: 1000;
+    transition: right 0.3s ease-in-out;
   }
   
   .nav-link-container{
     background-color: var(--secondary-color);
     top: 3.2rem;
-    /* height: 100vh; */
     height: calc(100vh - 3.2rem);
     overflow-y: auto;
 
@@ -137,9 +137,7 @@ ul.nav-link-list {
   .nav-link-list {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     justify-content: flex-start;
-    /* height: 80vh; */
     min-height: min-content;
     padding: 1rem 0;
     gap: 0.5rem;

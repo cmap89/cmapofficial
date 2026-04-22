@@ -20,7 +20,6 @@ export default function AboutPage() {
               Through my work, I combine technical expertise with creative intuition to help bring ideas to life. As an educator, I&apos;m passionate about sharing knowledge in a way that&apos;s clear, practical, and inspiring. I&apos;m actively working on new music and collaborations, and I&apos;m always looking to connect with artists and projects where I can contribute as an engineer, performer, songwriter, and producer.
             </p>
           </div>
-          <br />
           <Link className="ap-service-link" href="/services#sp-contact-form" >
             <Button className="bpg-btn" msg="Want to get in touch?" />
           </Link>
