@@ -1,0 +1,29 @@
+.skill-accordion-section {
+    padding: 0 1rem 1rem 1rem; 
+    margin-bottom: 0;
+    & h2, 
+    & h1{
+        margin-bottom: .75em;
+    }
+
+    & h1 {
+        font-size: 2rem;
+    }
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-summary span{
+    font-family: "Reenie Beanie";
+    font-size: clamp(1rem, 6vw, 1.2rem);
+}
+
+.accordion-details {
+    font-family: var(--secondary-font);
+    display: flex;
+flex-direction: column;
+gap: .5rem;
+}

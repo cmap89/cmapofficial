@@ -1,7 +1,7 @@
 export default function Footer() {
-    return ( 
+    return (
         <div className="footer-container">
-            <p className="footer-content">© 2025, cmap Music</p>
+            <p className="footer-contsent">{`© ${new Date().getFullYear()}, cmap Music`}</p>
         </div>
-     );
+    );
 }

@@ -4,15 +4,19 @@ import PageSection from "../components/Utils/PageSection";
 import FormCard from "../components/FormCard";
 import Link from "next/link";
 import Button from "../components/Utils/Button";
+import AccordionUsage from "../components/Utils/Accordion";
 
 export default function BookPage() {
   return (
     <div className="services-page-container">
-      <PageSection className="skill-list-sect" >
-        <h2>With over two decades of music experience and training, cmap Music offers many ways to bring your music to life.</h2>
-        <ul className="skill-list">
-          <li className="skill-item">
-            <h2>Audio Engineering</h2>
+      <PageSection className="skill-accordion-section">
+        <h1>Services</h1>
+        <h2>With over two decades of music experience and training, cmap Music offers many ways to bring your music to life.
+        </h2>
+        <AccordionUsage
+          className="audio-engineering-panel"
+          title="Audio Engineering"
+          content={<>
             <p>It&apos;s a technological world. Today, producing a hit record can be as easy as opening your laptop. At cmap Music, Charlie can guide you through that very process of production, using industry-leading DAWs such as Logic Pro.
             </p>
             <p>Together, we can analyze your songs, arrangements, instrumentation plus more, and improve key factors that will give your music the impact and presence that it truly deserves when it hits the airwaves.
@@ -26,9 +30,12 @@ export default function BookPage() {
             <Link href="#sp-contact-form" >
               <Button className="bpg-btn" msg="Book Now" />
             </Link>
-          </li>
-          <li className="skill-item">
-            <h2>Musician</h2>
+          </>}
+        />
+        <AccordionUsage
+          className="musician-panel"
+          title="Musician"
+          content={<>
             <p>So, you wrote the perfect song. You&apos;re ready to record your next hit. Now, you just need the perfect guitar solo, some smooth rhythm guitar, bass guitar, keys, or even background vocals to bring it all together.
             </p>
             <p>
@@ -37,19 +44,25 @@ export default function BookPage() {
             <Link href="#sp-contact-form" >
               <Button className="bpg-btn" msg="Book Now" />
             </Link>
-          </li>
-          <li className="skill-item">
-            <h2>Music Lessons</h2>
+          </>}
+        />
+        <AccordionUsage
+          className="music-lessons-panel"
+          title="Music Lessons"
+          content={<>
             <p>You&apos;ve always wanted to learn to play the guitar, how to record your tracks, or just understand music. Let&apos;s take the first step! cmap Music gives you a tailor-made experience that will help you to achieve your goals. You will be getting one-on-one coaching by Charlie, a musician with over 20 years of experience, principally in the guitar.
             </p>
             <p>
-              Within each lesson, you can expect to learn a wide array of topics including music theory, guitar technique, performance coaching, ear training, recording techniques, and songwriting, among many others. With special focus on where you are in the process, you will be getting undivided attention that will help you grow in areas of special interest. Whether you&apos;d like to learn more about performing, specific technique, or you simply want to learn a catalogue of songs, cmap Music has you covered. Just fire up the guitars and let&apos;s get moving!
+              Within each lesson, you can expect to learn a wide array of topics including music theory, guitar technique, performance coaching, ear training, recording techniques, and songwriting, among many others. With special focus on where you are in the process, you will be getting undivided attention that will help you grow in areas of special interest.
+            </p>
+            <p>
+              Whether you&apos;d like to learn more about performing, specific technique, or you simply want to learn a catalogue of songs, cmap Music has you covered. Just fire up the guitars and let&apos;s get moving!
             </p>
             <Link href="#sp-contact-form" >
               <Button className="bpg-btn" msg="Book Now" />
             </Link>
-          </li>
-        </ul>
+          </>}
+        />
       </PageSection>
       <PageSection id="sp-contact-form" className="sp-contact-sect" >
         <h2 className="sp-contact-heading">Contact me today</h2>

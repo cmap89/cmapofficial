@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react"
 import Image from "next/image";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 import SocialsStrip from "./SocialsStrip";
 import CmapLogo from "../../public/Pics/CMAP_Logos_2022/PNG/500x500/CMAP_Logo_Tilted_With_Name_.png"
@@ -35,6 +36,9 @@ export default function Navbar() {
             <div className={`nav-link-container ${isMenuOpen ? 'nav-menu-open' : ''}`}>
                 <ul className='nav-link-list'>
                     <li className="nav-item">
+                        <Link onClick={closeMenu} href="/services">Services</Link>
+                    </li>
+                    <li className="nav-item">
                         <Link onClick={closeMenu} href="/about">About</Link>
                     </li>
                     <li className="nav-item">
@@ -42,9 +46,6 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                         <Link onClick={closeMenu} href="/videos">Videos</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link onClick={closeMenu} href="/services">Services</Link>
                     </li>
                 </ul>
             </div>
@@ -56,7 +57,7 @@ export default function Navbar() {
                 </Link>
             </div>
             <div className="hamburger-container" onClick={toggleMenu}>
-                <i className={isMenuOpen ? 'fas fa-times' : 'fas fa-bars'} />
+                {isMenuOpen ? <FaTimes /> : <FaBars />}
             </div>
             <div className={`all-socials-container ${isMenuOpen ? 'social-container-open' : ''}`}>
                 <SocialsStrip exclude={['instagram-band', 'facebook-band', 'bandcamp', 'soundcloud', 'itunes']} menuStatus={isMenuOpen} clickEvent={closeMenu} />

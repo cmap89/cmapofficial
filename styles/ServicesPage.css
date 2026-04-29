@@ -1,4 +1,8 @@
 .services-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
     font-size: 0.7em;
     color: var(--secondary-bg);
 }
@@ -40,10 +44,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    /* .skill-list-sect {
-        height: fit-content;
-    } */
-
     .skill-list {
         height: fit-content;
     }

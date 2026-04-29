@@ -2,6 +2,8 @@
 
 import PageSection from "./components/Utils/PageSection";
 import FormCard from "./components/FormCard";
+import Link from "next/link";
+
 
 export default function FrontPage() {
   return (
@@ -11,11 +13,17 @@ export default function FrontPage() {
           <div className="fp-headline">
             <h1>Charlie Sharp</h1>
             <h2 className="fp-name">
-              Audio Engineer
+              <Link className="fp-service-link" href="/services" >
+                Audio Engineer
+              </Link>
               <br />
-              Musician
+              <Link className="fp-service-link" href="/services" >
+                Musician
+              </Link>
               <br />
-              Educator
+              <Link className="fp-service-link" href="/services" >
+                Educator
+              </Link>
             </h2>
           </div>
         </div>

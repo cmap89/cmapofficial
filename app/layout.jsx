@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={reenie.className} style={{ '--secondary-font': cantarell.style.fontFamily }}>
       <head>
-        <script src="https://kit.fontawesome.com/984ea53b98.js" crossOrigin="anonymous" async></script>
       </head>
       <body suppressHydrationWarning>
         <Navbar />
