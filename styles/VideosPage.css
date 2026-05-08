@@ -1,0 +1,15 @@
+.ig-feed-container {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.ig-fd-title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .ig-feed-section {
+        margin-bottom: 0;
+    }
+}
