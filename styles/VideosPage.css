@@ -1,3 +1,8 @@
+.page-section, .ig-geed-section {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
 .ig-feed-container {
     width: 100%;
     padding: 1rem 0;
@@ -8,8 +13,31 @@
     text-align: center;
 }
 
+.crt-logo {
+    font-family: var(--secondary-font);
+    color: var(--secondary-bg) !important;
+    font-size: .5rem !important;
+}
+
+.video-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.vp-vid-section {
+    padding: 0 0.5em;
+    margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 480px) {
     .ig-feed-section {
         margin-bottom: 0;
+        height: auto;
+    }
+
+    .page-section.vp-vid-section {
+        padding: 0 0.3rem;
     }
 }
