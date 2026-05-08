@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { defaultSocials } from '../../data/defaultSocials';
-// Default social links - can be imported and customized elsewhere
 
 
 export default function SocialsStrip({
@@ -8,11 +7,10 @@ export default function SocialsStrip({
     clickEvent,
     className = "",
     iconClassName = "fa-link",
-    exclude = [],  // Array of IDs to exclude, e.g., ['facebook']
-    include = null // Array of IDs to include (if set, only these show), e.g., ['instagram', 'spotify']
+    exclude = [],
+    include,
 }) {
 
-    // Filter socials based on include/exclude
     let filteredSocials = socials.filter(social => social.enabled !== false);
 
     if (include) {

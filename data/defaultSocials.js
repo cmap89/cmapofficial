@@ -1,4 +1,4 @@
-import { FaInstagram, FaFacebook, FaYoutube, FaSpotify, FaBandcamp, FaSoundcloud, FaItunes } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaYoutube, FaSpotify, FaBandcamp, FaSoundcloud, FaItunesNote } from 'react-icons/fa';
 
 
 export const defaultSocials = [
@@ -52,8 +52,8 @@ export const defaultSocials = [
         enabled: true
     },
     {
-        id: 'itunes',
-        icon: FaItunes,
+        id: 'apple music',
+        icon: FaItunesNote,
         url: 'https://music.apple.com/us/artist/cmap/1726979295',
         label: 'Apple Music',
         enabled: true

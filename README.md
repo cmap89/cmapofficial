@@ -8,21 +8,21 @@ This is a modern music artist website for CMAP built with Next.js, featuring an 
 
 ### Core Framework
 
-- **Next.js 15.1.x** - React framework with SSR and routing
-- **React 19.0.0** - Modern React with latest features and hooks
-- **SASS** - Enhanced CSS preprocessing
+- Next.js 16.2.x - React framework with SSR and routing
+- React 19.2 - Modern React with latest features and hooks
 
 ### Specialized Libraries
 
-- **Font Awesome** - Icon library for UI elements
-- **YouTube Embed** - Video content integration
+- Font Awesome - Icon library for UI elements
+- YouTube Embed - Video content integration
+- Spotify Embed - Music content integration
 
 ## Architecture Strategy
 
 ### Component-Based Organization
 
-- **Modular components** in `app/components` with dedicated CSS files in `styles`
-- **Client-side interactivity** using 'use client' directive for dynamic components
+- Modular components in `app/components` with dedicated CSS files in `styles`
+- Client-side interactivity using 'use client' directive for dynamic components
 
 ### Asset Management
 
@@ -32,9 +32,7 @@ This is a modern music artist website for CMAP built with Next.js, featuring an 
 
 ### Key Features
 
-- **Video Gallery** - YouTube embed integration with responsive design
-- **Social Integration** - Direct links to streaming platforms and social media
+- Video Gallery - YouTube embed integration with responsive design
+- Social Integration - Direct links to streaming platforms and social media
 
 The project follows modern React patterns with component isolation, CSS-in-modules approach, and responsive design principles, creating a professional artist portfolio with interactive media capabilities.
-
-More features to come!

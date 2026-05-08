@@ -4,10 +4,6 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from './Button';
-import Link from 'next/link';
-import { useState } from 'react';
-
 
 export default function AccordionUsage({ className, title = "Title Here", content = "Content Here" }) {
 

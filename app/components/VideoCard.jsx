@@ -1,7 +1,6 @@
 'use client'
 import Video from './Video'
 
-// Props: {id: number, title:string, youtubeId: string, description: string}
 export default function VideoCard({ title, youtubeId, description = "", vidTitleClass = "" }) {
     return (
         <div className={`vid-card-container`}>

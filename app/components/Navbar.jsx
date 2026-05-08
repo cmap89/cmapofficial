@@ -60,7 +60,7 @@ export default function Navbar() {
                 {isMenuOpen ? <FaTimes /> : <FaBars />}
             </div>
             <div className={`all-socials-container ${isMenuOpen ? 'social-container-open' : ''}`}>
-                <SocialsStrip exclude={['instagram-band', 'facebook-band', 'bandcamp', 'soundcloud', 'itunes']} menuStatus={isMenuOpen} clickEvent={closeMenu} />
+                <SocialsStrip exclude={['instagram-band', 'facebook-band', 'bandcamp', 'soundcloud', 'apple music']} menuStatus={isMenuOpen} clickEvent={closeMenu} />
             </div>
         </nav>
     )
