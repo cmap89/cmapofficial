@@ -31,7 +31,6 @@ export default function FrontPage() {
       <PageSection className="fp-contact-section">
         <h1 className="fp-contact-heading" >I&apos;ll help you make the music you always wanted to make</h1>
         <FormCard
-          scriptSrc={"https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9QenBKViIsIldlYnNpdGVJRCI6Indic19WMDRKeCIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3pnZzdESm4ifQ=="}
           title={"I believe when you find your passion, you find yourself"}
           description={"Need an engineer, musician, teacher, or just have a question? Feel free to reach out."}
           className="fp-contact-card"

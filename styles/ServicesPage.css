@@ -7,6 +7,10 @@
     color: var(--secondary-bg);
 }
 
+.sp-sub-heading {
+    padding: 0 1rem;
+}
+
 .skill-list-sect {
     align-items: flex-start;
     padding: 1rem 1em;
@@ -35,12 +39,17 @@
     font-family: var(--secondary-font);
 }
 
-.sp-contact-sect {
+.page-section.sp-contact-sect {
     background-color: #fff;
     color: var(--body-bg);
     justify-content: space-evenly;
     height: 30em;
     margin-bottom: 2em;
+    padding: 1rem;
+}
+
+.sp-contact-heading {
+        font-size: clamp(32px, 8vw, 60px);
 }
 
 @media screen and (max-width: 480px) {

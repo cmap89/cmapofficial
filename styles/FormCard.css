@@ -1,27 +1,44 @@
 .form-card {
+    font-family: var(--secondary-font);
     font-size: 0.7em;
     border: solid white 2px;
     color: var(--body-bg);
     background-color: #fff;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
     width: 100%;
 }
 
 .form-desc {
-    font-family: var(--secondary-font);
     width: 50%;
-    padding-bottom: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    padding: 0 1rem;
 }
 
 .main-form {
+    font-size: .5rem;
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    padding: 0px 1rem;
 }
+
+.form-name-section {
+    display: flex;
+}
+
+
 
 @media screen and (max-width: 480px) {
    .form-card {
         flex-direction: column;
+        align-items: center;
         padding: 0 ;
     }
 
@@ -30,8 +47,12 @@
     }
 
     .form-desc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 0;
         width: 90%;
-        font-size: .7em;
+        font-size: 1em;
     }
 }

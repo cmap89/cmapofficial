@@ -42,7 +42,7 @@ iframe {
 
 @media screen and (max-width: 480px) {
     .vid-card-container {
-        height: 19em;
+        height: 17em;
     }
     
     .vid-card-vid {

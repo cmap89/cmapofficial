@@ -47,3 +47,25 @@ a {
     transition: none;
   }
 }
+
+label {
+    margin-top: .2rem;
+}
+
+input {
+    height: 1rem;
+}
+
+input, textarea {
+    border: gray 1px solid;
+    border-radius: 6px;
+    padding: 0 0.3rem;
+}
+
+textarea {
+    height: 2rem;
+}
+
+button {
+    margin-top: .4rem;
+}

@@ -11,7 +11,7 @@ export default function BookPage() {
     <div className="services-page-container">
       <PageSection className="skill-accordion-section">
         <h1>Services</h1>
-        <h2>With over two decades of music experience and training, cmap Music offers many ways to bring your music to life.
+        <h2 className="sp-sub-heading" >With over two decades of music experience and training, cmap Music offers many ways to bring your music to life.
         </h2>
         <AccordionUsage
           className="audio-engineering-panel"
@@ -66,7 +66,7 @@ export default function BookPage() {
       </PageSection>
       <PageSection id="sp-contact-form" className="sp-contact-sect" >
         <h2 className="sp-contact-heading">Contact me today</h2>
-        <FormCard scriptSrc={"https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9QenBKViIsIldlYnNpdGVJRCI6Indic19WMDRKeCIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3pnZzdESm4ifQ=="} title={`Let's start your musical journey`} description={``} ></FormCard>
+        <FormCard title={`Let's start your musical journey`} description={``} ></FormCard>
       </PageSection>
     </div >
   );
