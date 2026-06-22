@@ -29,7 +29,7 @@ export default function FrontPage() {
         </div>
       </PageSection>
       <PageSection className="fp-contact-section">
-        <h1 className="fp-contact-heading" >I&apos;ll help you make the music you always wanted to make</h1>
+        <h2 className="fp-contact-heading" >I&apos;ll help you make the music you always wanted to make</h2>
         <FormCard
           title={"I believe when you find your passion, you find yourself"}
           description={"Need an engineer, musician, teacher, or just have a question? Feel free to reach out."}

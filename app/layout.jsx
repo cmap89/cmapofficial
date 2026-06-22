@@ -15,9 +15,9 @@ const cantarell = Cantarell({
 });
 
 export const metadata = {
-  title: 'cmap',
-  description: 'Official website for the band cmap featuring music and videos.',
-  keywords: 'CMAP, music, artist, booking, videos',
+  title: 'cmap - Personalized Private Guitar Lessons & Sessions',
+  description: 'Personalized guitar lessons | Recording & music services about you.',
+  keywords: 'music lessons, guitar lessons, recording, mixing',
   icons: {
     icon: [
       { url: '/Pics/CMAP_Logos_2022/PNG/500x500/CMAP_Logo_Tilted_With_Name_.png' },
