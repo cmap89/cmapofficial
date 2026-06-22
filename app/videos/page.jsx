@@ -7,6 +7,7 @@ import IGFeed from "../components/IGFeed";
 export default function VideosPage() {
     return (
         <div className="video-page-container">
+            <h1>Videos</h1>
             <PageSection className="ig-feed-section" >
                 <IGFeed />
             </PageSection>

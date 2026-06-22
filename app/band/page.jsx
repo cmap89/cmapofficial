@@ -12,6 +12,7 @@ export default function AboutPage() {
     <div className="band-page-container">
       <PageSection className="bpg-section">
         <div className="bpg-background">
+          <h1>cmap - The Band</h1>
           <h2 className="bpg-bio">
             From the sun-soaked city of Belize to the foggy streets of San
             Francisco, cmap’s journey echoes in every riff and rhythm, igniting
