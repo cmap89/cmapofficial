@@ -16,7 +16,7 @@ const cantarell = Cantarell({
 
 export const metadata = {
   title: 'cmap - Personalized Private Guitar Lessons & Sessions',
-  description: 'Personalized guitar lessons | Recording & music services about you.',
+  description: 'Personalized guitar lessons, audio engineering, and performance services located in the SF Bay Area.',
   keywords: 'music lessons, guitar lessons, recording, mixing',
   icons: {
     icon: [
